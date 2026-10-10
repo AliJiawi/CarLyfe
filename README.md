@@ -52,15 +52,17 @@ Fleet operators and car companies, not individual drivers. They manage many vehi
 
 ## Screenshots
 
+Both screenshots use a real upload: `demo_zephyr.csv` (10 Zephyr vehicles), analysed by the live API with AI explanations on.
+
 <p align="center">
   <img src="docs/screenshot-fleet.png" alt="Fleet table, ranked by health score" width="880">
 </p>
-<p align="center"><em>The fleet, ranked worst first. Critical vehicles carry a red rule on the left.</em></p>
+<p align="center"><em>The fleet after uploading <code>demo_zephyr.csv</code>: summary strip, AI fleet briefing and the table ranked worst first. Critical vehicles carry a red rule on the left.</em></p>
 
 <p align="center">
   <img src="docs/screenshot-detail.png" alt="Vehicle detail panel with the AI explanation" width="880">
 </p>
-<p align="center"><em>Detail panel: why the vehicle is flagged, the forecast, the recommended action and every component.</em></p>
+<p align="center"><em>Detail panel for a critical vehicle (ZPH-00055): the AI explanation of why it is flagged, the battery forecast, the recommended action and every component.</em></p>
 
 <br>
 
