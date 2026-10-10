@@ -29,7 +29,7 @@ CarLyfe is a predictive maintenance tool for vehicle fleets. A fleet manager upl
 
 For each vehicle it shows:
 
-| | |
+| What you see | What it tells you |
 | --- | --- |
 | **Time to failure** | How many days until the battery is likely to fail, as a range rather than a single number. |
 | **Root cause** | What is causing the problem: normal aging, a charging-system fault, or something draining the battery while parked. |
