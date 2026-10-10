@@ -1,0 +1,412 @@
+/* Motion system.
+   - Only transform and opacity are animated (cheap, no layout thrash).
+   - Entrances ease out and run 240-420 ms; feedback is 120 ms; exits are shorter.
+   - Stagger is capped, so a 30-row table never takes more than ~0.5 s to settle.
+   - Everything collapses to near-instant under prefers-reduced-motion. */
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes row-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+
+@keyframes slide-out {
+  to {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+}
+
+@keyframes wipe {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes letter-up {
+  from {
+    transform: translateY(110%);
+  }
+}
+
+@keyframes wm-stretch {
+  from {
+    font-stretch: 72%;
+    letter-spacing: 0.12em;
+  }
+}
+
+@keyframes tagline-ink {
+  from {
+    color: var(--accent);
+  }
+}
+
+@keyframes tagline-edge {
+  0% {
+    left: 0;
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes rule-in {
+  from {
+    transform: scaleY(0);
+  }
+}
+
+@keyframes ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  70%,
+  100% {
+    transform: scale(2.6);
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@keyframes indeterminate {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(250%);
+  }
+}
+
+@keyframes nudge {
+  0%,
+  100% {
+    transform: none;
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
+
+/* ---- page load ---- */
+.topbar {
+  position: relative;
+}
+
+/* wordmark: letters rise out of a mask one by one while the wide face expands to full width */
+.wordmark {
+  display: block;
+  overflow: hidden;
+  padding: 0.06em 0.04em;
+  animation: wm-stretch 1400ms var(--ease-out) backwards;
+}
+
+.wm-letter {
+  display: inline-block;
+  animation: letter-up 760ms var(--ease-out) backwards;
+  animation-delay: calc(var(--i, 0) * 65ms + 80ms);
+}
+
+/* tagline: slow left-to-right wipe led by a thin red edge; the text settles from red to black */
+.topbar-sub {
+  position: relative;
+  animation:
+    wipe 1500ms var(--ease-out) 750ms backwards,
+    tagline-ink 2200ms var(--ease-in-out) 750ms backwards;
+}
+
+.topbar-sub::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  background: var(--accent);
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: tagline-edge 1500ms var(--ease-out) 750ms backwards;
+}
+
+.page > * {
+  animation: rise var(--dur-slow) var(--ease-out) backwards;
+}
+.page > :nth-child(2) {
+  animation-delay: 60ms;
+}
+.page > :nth-child(3) {
+  animation-delay: 120ms;
+}
+.page > :nth-child(n + 4) {
+  animation-delay: 180ms;
+}
+
+/* request in flight: thin indeterminate line under the top bar */
+.progress {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  overflow: hidden;
+}
+
+.progress::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 40%;
+  background: var(--accent);
+  animation: indeterminate 1.3s var(--ease-in-out) infinite;
+}
+
+/* ---- feedback ---- */
+.btn {
+  transition:
+    background var(--dur-fast),
+    border-color var(--dur-fast),
+    transform var(--dur-fast) var(--ease-out),
+    opacity var(--dur-fast);
+}
+
+.btn:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+a {
+  text-decoration-thickness: 1px;
+  transition: text-decoration-thickness var(--dur-fast);
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.drop {
+  transition:
+    border-color var(--dur-base),
+    background var(--dur-base),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.drop.dragging {
+  transform: scale(1.005);
+}
+
+input.field {
+  transition:
+    width var(--dur-base) var(--ease-out),
+    border-color var(--dur-fast);
+}
+
+@media (min-width: 641px) {
+  input.field:focus {
+    width: 300px;
+  }
+}
+
+/* ---- notices ---- */
+.strip-error {
+  animation:
+    rise var(--dur-base) var(--ease-out) backwards,
+    nudge 320ms var(--ease-out) 240ms;
+}
+
+/* ---- summary ---- */
+.strip-stats > div {
+  animation: rise var(--dur-base) var(--ease-out) backwards;
+}
+.strip-stats > div:nth-child(1) {
+  animation-delay: 120ms;
+}
+.strip-stats > div:nth-child(2) {
+  animation-delay: 170ms;
+}
+.strip-stats > div:nth-child(3) {
+  animation-delay: 220ms;
+}
+.strip-stats > div:nth-child(4) {
+  animation-delay: 270ms;
+}
+.strip-stats > div:nth-child(5) {
+  animation-delay: 320ms;
+}
+.strip-stats > div:nth-child(6) {
+  animation-delay: 370ms;
+}
+
+.briefing {
+  animation: rise var(--dur-slow) var(--ease-out) 400ms backwards;
+}
+
+/* ---- table ---- */
+.fleet tbody tr {
+  animation: row-in var(--dur-slow) var(--ease-out) backwards;
+  animation-delay: calc(min(var(--i, 0), 12) * 22ms + 240ms);
+  transition: background var(--dur-fast);
+}
+
+.fleet tbody tr.no-hover {
+  animation: none;
+}
+
+.fleet td:first-child {
+  position: relative;
+}
+
+/* critical rows: the left rule draws in from the top */
+.fleet tr.is-critical td:first-child::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 2px;
+  background: var(--critical);
+  transform-origin: top;
+  animation: rule-in var(--dur-slow) var(--ease-out) backwards;
+  animation-delay: calc(min(var(--i, 0), 12) * 22ms + 400ms);
+}
+
+/* sort arrow: fades in on the active column and flips with direction */
+.sort-mark {
+  transform: translateY(2px);
+  transition:
+    opacity var(--dur-fast),
+    transform var(--dur-base) var(--ease-out);
+}
+
+.sort-mark.active {
+  opacity: 1;
+  transform: none;
+}
+
+.sort-mark.active.desc {
+  transform: rotate(180deg);
+}
+
+/* critical status dot: slow ring, nothing else on the page pulses */
+.dot {
+  position: relative;
+}
+
+.dot-critical::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--critical);
+  animation: ping 2.4s var(--ease-out) infinite;
+}
+
+/* loading skeleton */
+.skel {
+  background: linear-gradient(90deg, var(--border) 25%, var(--surface-hover) 50%, var(--border) 75%);
+  background-size: 300% 100%;
+  animation: shimmer 1.4s linear infinite;
+}
+
+/* ---- side panel ---- */
+.overlay {
+  animation: fade var(--dur-base) var(--ease-out) both;
+}
+
+.panel {
+  animation: slide-in 320ms var(--ease-out) both;
+}
+
+.overlay.leaving {
+  animation: fade-out 160ms var(--ease-in-out) forwards;
+}
+
+.overlay.leaving .panel {
+  animation: slide-out 180ms var(--ease-in-out) forwards;
+}
+
+.panel-head {
+  animation: rise var(--dur-base) var(--ease-out) 80ms backwards;
+}
+
+.panel-body > * {
+  animation: rise var(--dur-slow) var(--ease-out) backwards;
+}
+.panel-body > :nth-child(1) {
+  animation-delay: 120ms;
+}
+.panel-body > :nth-child(2) {
+  animation-delay: 170ms;
+}
+.panel-body > :nth-child(3) {
+  animation-delay: 220ms;
+}
+.panel-body > :nth-child(4) {
+  animation-delay: 270ms;
+}
+.panel-body > :nth-child(n + 5) {
+  animation-delay: 320ms;
+}
+
+.comps li {
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+.comps li:hover {
+  transform: translateX(3px);
+}
+
+/* ---- reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

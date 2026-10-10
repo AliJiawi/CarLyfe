@@ -56,7 +56,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta is in critical condition due to a severe voltage drop during cranking and a low resting voltage. The machine learning model predicts zero months of remaining battery life, so service should prioritize a full battery replacement. Technicians should also plan to replace the brake pads as the current thickness is below the safety threshold."
   },
   {
     "vehicle_id": "ZPH-00055",
@@ -115,7 +116,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta is experiencing engine overheating indicated by a critical P0217 trouble code and a coolant temperature reading of 104.1 degrees Celsius. The battery health is also at risk with a prediction of 11.8 months of life remaining and a low cranking voltage of 9.36 volts. Service should first inspect the thermal and coolant loop to address the engine overtemperature issue."
   },
   {
     "vehicle_id": "ZPH-00041",
@@ -174,7 +176,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta tires are in critical condition with a tread depth of 1.6 mm. Service should replace the tires immediately as they are below the 2 mm safety threshold. The battery health is currently stable with a prediction of 21.5 months of remaining life."
   },
   {
     "vehicle_id": "ZPH-00009",
@@ -233,7 +236,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta tires are in critical condition with a tread depth of 1.6 mm. The battery health prediction indicates 23.1 months of remaining life, which is within normal operating parameters. Service should prioritize replacing all tires immediately to ensure vehicle safety."
   },
   {
     "vehicle_id": "ZPH-00033",
@@ -292,7 +296,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "ZPH-00102",
@@ -351,7 +356,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "ZPH-00010",
@@ -410,7 +416,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "ZPH-00043",
@@ -469,7 +476,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "ZPH-00020",
@@ -528,7 +536,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "ZPH-00001",
@@ -587,7 +596,8 @@
     "unmapped_signals": [
       "InfotainmentSW"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "KNT-00008",
@@ -647,7 +657,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Kinto Sora is in critical health due to a low system voltage code and severe battery voltage drops during cranking and at rest. The machine learning model provides a prediction of only 0.8 months of remaining battery life. Service should prioritize a full battery and electrical system diagnostic before addressing the tire tread wear."
   },
   {
     "vehicle_id": "KNT-00037",
@@ -707,7 +718,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Kinto Mizu battery is currently in a warning state due to a low cranking voltage of 9.22 V and a history of short trips. A machine learning model predicts only 9.7 months of remaining battery life. Service should first perform a physical load test on the battery to confirm its current capacity."
   },
   {
     "vehicle_id": "KNT-00110",
@@ -767,7 +779,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "KNT-00068",
@@ -827,7 +840,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "KNT-00035",
@@ -887,7 +901,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Kinto Sora battery is currently in a warning state due to a low cranking voltage of 9.44 V. The machine learning model provides a prediction of 25.1 months of remaining battery life. Service should first perform a load test on the battery to verify its condition."
   },
   {
     "vehicle_id": "KNT-00087",
@@ -947,7 +962,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "KNT-00018",
@@ -1007,7 +1023,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "KNT-00041",
@@ -1067,7 +1084,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "KNT-00001",
@@ -1127,7 +1145,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "KNT-00076",
@@ -1187,7 +1206,8 @@
       "cabin_air_idx",
       "sw_build"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "1MRL6968657235002",
@@ -1247,7 +1267,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Marlin Harbor has a critical battery status and a P0562 low system voltage trouble code. The machine learning model predicts only 0.2 months of battery life remaining based on a severe cranking voltage drop to 8.24 V and a low resting voltage of 11.98 V. Service should first test and replace the battery to resolve the voltage instability."
   },
   {
     "vehicle_id": "1MRL5108229430871",
@@ -1307,7 +1328,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Marlin Harbor battery is currently in a warning state with a health percentage of 33.7 percent. The machine learning model provides a prediction of 15.8 months of remaining battery life based on age and usage patterns. Service should first perform a physical inspection of the battery terminals and connections to verify the reported voltage levels."
   },
   {
     "vehicle_id": "1MRL9025509212230",
@@ -1367,7 +1389,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "1MRL2968058250803",
@@ -1427,7 +1450,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": "The Marlin Surge braking system is critical because the pad thickness of 1.8 mm is below the 2.5 mm minimum requirement. The vehicle also shows a high system voltage reading of 15.66 V from the alternator, which aligns with the P0563 trouble code. Service should prioritize replacing the brake pads immediately and investigating the charging system voltage. The battery has a predicted remaining life of 22.4 months."
   },
   {
     "vehicle_id": "1MRL3951682001440",
@@ -1487,7 +1511,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "1MRL4562726914912",
@@ -1547,7 +1572,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "1MRL5642648837971",
@@ -1607,7 +1633,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "1MRL5008341689331",
@@ -1667,7 +1694,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "1MRL8253525640604",
@@ -1727,7 +1755,8 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   },
   {
     "vehicle_id": "1MRL8950219030077",
@@ -1787,6 +1816,7 @@
       "telematics.ota_channel",
       "export_version"
     ],
-    "missing_signals": []
+    "missing_signals": [],
+    "ai_explanation": null
   }
 ]

@@ -1,0 +1,105 @@
+/* Design tokens. Everything else in the UI reads from these.
+   Theme reference: the CarLyfe slide deck. White page, near-black text,
+   one deep red, wide display wordmark, condensed body, mono tagline.
+   Always light: there is deliberately no dark theme. */
+:root {
+  /* neutral scale */
+  --gray-0: #ffffff;
+  --gray-50: #ffffff;
+  --gray-100: #f4f4f4;
+  --gray-200: #dcdcdc;
+  --gray-300: #b8b8b8;
+  --gray-500: #55555a;
+  --gray-700: #2e2e30;
+  --gray-900: #121212;
+
+  /* surfaces + text */
+  --bg: var(--gray-50);
+  --surface: var(--gray-0);
+  --surface-hover: var(--gray-100);
+  --surface-selected: #ebebeb;
+  --border: var(--gray-200);
+  --border-strong: var(--gray-300);
+  --text: var(--gray-900);
+  --text-muted: var(--gray-500);
+
+  /* single accent: the deck's deep red */
+  --accent: #b01212;
+  --accent-text: #ffffff;
+  --accent-soft: #ead3d1;
+
+  /* status: small badges and dots only (critical shares the accent hue) */
+  --critical: #b01212;
+  --critical-soft: #ead3d1;
+  --warning: #7a4f00;
+  --warning-soft: #eadfc4;
+  --ok: #1f6b3a;
+  --ok-soft: #d3e4d9;
+
+  /* spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* radii + borders */
+  --radius-sm: 3px;
+  --radius-md: 4px;
+  --border-width: 1px;
+  --row-height: 44px;
+
+  /* type: 4 sizes, 2 weights (the wordmark is the one logo exception) */
+  --font-sans: var(--font-body), "Arial Narrow", system-ui, sans-serif;
+  --font-display: var(--font-wordmark), "Arial Black", system-ui, sans-serif;
+  --font-mono: var(--font-tagline), ui-monospace, "Cascadia Mono", Consolas, monospace;
+  --text-xs: 13px;
+  --text-sm: 15px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --weight-regular: 400;
+  --weight-strong: 600;
+
+  --overlay: rgba(255, 255, 255, 0.6);
+  --duration: 140ms;
+
+  /* motion: ease-out for entrances, short for feedback, transform/opacity only */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 240ms;
+  --dur-slow: 420ms;
+  color-scheme: light;
+}
+
+/* Dark theme: opt-in via the toggle (html[data-theme="dark"]); the default is always light. */
+:root[data-theme="dark"] {
+  --gray-0: #1a1a1a;
+  --gray-50: #121212;
+  --gray-100: #242424;
+  --gray-200: #333333;
+  --gray-300: #4a4a4a;
+  --gray-500: #a8a8ad;
+  --gray-700: #d4d4d4;
+  --gray-900: #ececec;
+
+  --bg: var(--gray-50);
+  --surface: var(--gray-0);
+  --surface-hover: var(--gray-100);
+  --surface-selected: #2c2c2c;
+
+  --accent: #ff6259;
+  --accent-text: #121212;
+  --accent-soft: #3a1a19;
+
+  --critical: #ff6259;
+  --critical-soft: #3a1a19;
+  --warning: #e6b94f;
+  --warning-soft: #2e2410;
+  --ok: #6fcf8f;
+  --ok-soft: #14291c;
+
+  --overlay: rgba(0, 0, 0, 0.6);
+  color-scheme: dark;
+}

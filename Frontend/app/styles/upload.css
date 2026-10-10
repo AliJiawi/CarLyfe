@@ -1,0 +1,90 @@
+/* first-run upload: a bordered row, left aligned, not a hero */
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border: var(--border-width) dashed var(--border-strong);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  transition: border-color var(--duration), background var(--duration);
+}
+
+.drop.dragging {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.drop-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  font-size: var(--text-sm);
+}
+
+.drop-text strong {
+  font-size: var(--text-md);
+}
+
+/* slim bar once data is showing */
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  min-height: 44px;
+  padding: var(--space-2) var(--space-3);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  font-size: var(--text-sm);
+}
+
+.bar-main {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.bar-file {
+  font-weight: var(--weight-strong);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar-actions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+/* inline notices: one thin line each */
+.strip {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-height: 32px;
+  padding: var(--space-1) var(--space-3);
+  border: var(--border-width) solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.strip .dot {
+  margin-right: calc(var(--space-1) * -1);
+}
+
+.strip-error {
+  color: var(--text);
+  border-color: var(--critical);
+}
+
+.strip-error .strip-action {
+  margin-left: auto;
+}
