@@ -1,0 +1,1822 @@
+[
+  {
+    "vehicle_id": "ZPH-00060",
+    "brand": "Zephyr",
+    "model": "Volta",
+    "odometer_km": 55429,
+    "climate_zone": "temperate",
+    "overall_health_score": 40,
+    "overall_status": "critical",
+    "projected_cost_at_risk_usd": 250.0,
+    "battery_analytics": {
+      "health_pct": 0.0,
+      "remaining_months": 0.0,
+      "urgency": "critical",
+      "primary_driver": "Predicted 0 months of life left. Contributing factors: severe cranking voltage drop (8.60 V), low resting voltage (11.90 V), mostly short trips (60% of trips).",
+      "prescriptive_action": "Replace the battery at the earliest service visit and test the charging system."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "critical",
+        "metric_value": "8.60 V crank / 11.90 V rest",
+        "reason": "Predicted 0 months of life left. Contributing factors: severe cranking voltage drop (8.60 V), low resting voltage (11.90 V), mostly short trips (60% of trips)."
+      },
+      {
+        "name": "Braking System",
+        "status": "warning",
+        "metric_value": "2.9 mm",
+        "reason": "Pad thickness below 4 mm; plan replacement."
+      },
+      {
+        "name": "Tires",
+        "status": "unknown",
+        "metric_value": "N/A",
+        "reason": "Tread depth not reported by this vehicle."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "89.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "4.2%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta is in critical condition due to a severe voltage drop during cranking and a low resting voltage. The machine learning model predicts zero months of remaining battery life, so service should prioritize a full battery replacement. Technicians should also plan to replace the brake pads as the current thickness is below the safety threshold."
+  },
+  {
+    "vehicle_id": "ZPH-00055",
+    "brand": "Zephyr",
+    "model": "Volta",
+    "odometer_km": 29248,
+    "climate_zone": "tropical",
+    "overall_health_score": 45,
+    "overall_status": "critical",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 29.6,
+      "remaining_months": 11.8,
+      "urgency": "elevated",
+      "primary_driver": "Predicted 11.8 months of life left. Contributing factors: cranking voltage sag (9.36 V).",
+      "prescriptive_action": "Schedule a battery load test and charging-system check at the next service."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "warning",
+        "metric_value": "9.36 V crank / 12.30 V rest",
+        "reason": "Predicted 11.8 months of life left. Contributing factors: cranking voltage sag (9.36 V)."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "9.9 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "4.4 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "warning",
+        "metric_value": "104.1 \u00b0C",
+        "reason": "Coolant temperature above 99 \u00b0C (running hot)."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "0.8%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "critical",
+        "metric_value": "P0217",
+        "reason": "P0217: Engine overtemperature"
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta is experiencing engine overheating indicated by a critical P0217 trouble code and a coolant temperature reading of 104.1 degrees Celsius. The battery health is also at risk with a prediction of 11.8 months of life remaining and a low cranking voltage of 9.36 volts. Service should first inspect the thermal and coolant loop to address the engine overtemperature issue."
+  },
+  {
+    "vehicle_id": "ZPH-00041",
+    "brand": "Zephyr",
+    "model": "Volta",
+    "odometer_km": 163286,
+    "climate_zone": "tropical",
+    "overall_health_score": 70,
+    "overall_status": "warning",
+    "projected_cost_at_risk_usd": 600.0,
+    "battery_analytics": {
+      "health_pct": 55.0,
+      "remaining_months": 21.5,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 21.5 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.20 V crank / 12.44 V rest",
+        "reason": "Predicted 21.5 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "10.4 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "critical",
+        "metric_value": "1.6 mm",
+        "reason": "Tread depth below 2 mm; replace tires."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "91.9 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-6.4%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta tires are in critical condition with a tread depth of 1.6 mm. Service should replace the tires immediately as they are below the 2 mm safety threshold. The battery health is currently stable with a prediction of 21.5 months of remaining life."
+  },
+  {
+    "vehicle_id": "ZPH-00009",
+    "brand": "Zephyr",
+    "model": "Volta",
+    "odometer_km": 113580,
+    "climate_zone": "temperate",
+    "overall_health_score": 70,
+    "overall_status": "warning",
+    "projected_cost_at_risk_usd": 600.0,
+    "battery_analytics": {
+      "health_pct": 53.0,
+      "remaining_months": 23.1,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 23.1 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "9.74 V crank / 12.50 V rest",
+        "reason": "Predicted 23.1 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "5.5 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "critical",
+        "metric_value": "1.6 mm",
+        "reason": "Tread depth below 2 mm; replace tires."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "85.9 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-0.8%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Zephyr Volta tires are in critical condition with a tread depth of 1.6 mm. The battery health prediction indicates 23.1 months of remaining life, which is within normal operating parameters. Service should prioritize replacing all tires immediately to ensure vehicle safety."
+  },
+  {
+    "vehicle_id": "ZPH-00033",
+    "brand": "Zephyr",
+    "model": "Aria",
+    "odometer_km": 9014,
+    "climate_zone": "tropical",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 67.2,
+      "remaining_months": 22.5,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 22.5 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.37 V crank / 12.54 V rest",
+        "reason": "Predicted 22.5 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "10.7 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "7.4 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "0.5%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "ZPH-00102",
+    "brand": "Zephyr",
+    "model": "Aria",
+    "odometer_km": 136409,
+    "climate_zone": "temperate",
+    "overall_health_score": 85,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 76.4,
+      "remaining_months": 40.2,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 40.2 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.41 V crank / 12.66 V rest",
+        "reason": "Predicted 40.2 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "warning",
+        "metric_value": "3.4 mm",
+        "reason": "Pad thickness below 4 mm; plan replacement."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "4.1 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "92.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-1.5%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "ZPH-00010",
+    "brand": "Zephyr",
+    "model": "Volta",
+    "odometer_km": 74018,
+    "climate_zone": "hot_arid",
+    "overall_health_score": 90,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 89.2,
+      "remaining_months": 35.7,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 35.7 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.58 V crank / 12.66 V rest",
+        "reason": "Predicted 35.7 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "5.8 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "warning",
+        "metric_value": "2.2 mm",
+        "reason": "Tread depth below 3.5 mm; plan replacement."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "96.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-4.8%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "ZPH-00043",
+    "brand": "Zephyr",
+    "model": "Aria",
+    "odometer_km": 132347,
+    "climate_zone": "hot_arid",
+    "overall_health_score": 85,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 91.9,
+      "remaining_months": 35.2,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 35.2 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.84 V crank / 12.71 V rest",
+        "reason": "Predicted 35.2 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "warning",
+        "metric_value": "2.8 mm",
+        "reason": "Pad thickness below 4 mm; plan replacement."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "7.7 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "91.4 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-2.2%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "ZPH-00020",
+    "brand": "Zephyr",
+    "model": "Volta",
+    "odometer_km": 155771,
+    "climate_zone": "cold",
+    "overall_health_score": 90,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 77.5,
+      "remaining_months": 34.8,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 34.8 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "9.85 V crank / 12.70 V rest",
+        "reason": "Predicted 34.8 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "8.2 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "warning",
+        "metric_value": "2.2 mm",
+        "reason": "Tread depth below 3.5 mm; plan replacement."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "83.9 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "3.1%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "ZPH-00001",
+    "brand": "Zephyr",
+    "model": "Volta",
+    "odometer_km": 30407,
+    "climate_zone": "temperate",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 66.4,
+      "remaining_months": 35.5,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 35.5 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.52 V crank / 12.56 V rest",
+        "reason": "Predicted 35.5 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "7.5 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "4.7 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "88.2 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "2.1%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "InfotainmentSW"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "KNT-00008",
+    "brand": "Kinto",
+    "model": "Sora",
+    "odometer_km": 45831,
+    "climate_zone": "tropical",
+    "overall_health_score": 20,
+    "overall_status": "critical",
+    "projected_cost_at_risk_usd": 250.0,
+    "battery_analytics": {
+      "health_pct": 2.5,
+      "remaining_months": 0.8,
+      "urgency": "critical",
+      "primary_driver": "Predicted 0.8 months of life left. Contributing factors: severe cranking voltage drop (8.93 V), low resting voltage (11.97 V).",
+      "prescriptive_action": "Replace the battery at the earliest service visit and test the charging system."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "critical",
+        "metric_value": "8.93 V crank / 11.97 V rest",
+        "reason": "Predicted 0.8 months of life left. Contributing factors: severe cranking voltage drop (8.93 V), low resting voltage (11.97 V)."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "10.3 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "warning",
+        "metric_value": "3.4 mm",
+        "reason": "Tread depth below 3.5 mm; plan replacement."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "86.2 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "0.3%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "critical",
+        "metric_value": "P0562",
+        "reason": "P0562: System voltage low"
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Kinto Sora is in critical health due to a low system voltage code and severe battery voltage drops during cranking and at rest. The machine learning model provides a prediction of only 0.8 months of remaining battery life. Service should prioritize a full battery and electrical system diagnostic before addressing the tire tread wear."
+  },
+  {
+    "vehicle_id": "KNT-00037",
+    "brand": "Kinto",
+    "model": "Mizu",
+    "odometer_km": 153216,
+    "climate_zone": "tropical",
+    "overall_health_score": 80,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 29.4,
+      "remaining_months": 9.7,
+      "urgency": "elevated",
+      "primary_driver": "Predicted 9.7 months of life left. Contributing factors: cranking voltage sag (9.22 V), mostly short trips (74% of trips).",
+      "prescriptive_action": "Schedule a battery load test and charging-system check at the next service."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "warning",
+        "metric_value": "9.22 V crank / 12.27 V rest",
+        "reason": "Predicted 9.7 months of life left. Contributing factors: cranking voltage sag (9.22 V), mostly short trips (74% of trips)."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "9.9 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "6.9 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.0 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "2.2%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Kinto Mizu battery is currently in a warning state due to a low cranking voltage of 9.22 V and a history of short trips. A machine learning model predicts only 9.7 months of remaining battery life. Service should first perform a physical load test on the battery to confirm its current capacity."
+  },
+  {
+    "vehicle_id": "KNT-00110",
+    "brand": "Kinto",
+    "model": "Hikari",
+    "odometer_km": 109233,
+    "climate_zone": "tropical",
+    "overall_health_score": 90,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 44.1,
+      "remaining_months": 16.0,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 16 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.00 V crank / 12.41 V rest",
+        "reason": "Predicted 16 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "10.5 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "warning",
+        "metric_value": "2.7 mm",
+        "reason": "Tread depth below 3.5 mm; plan replacement."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "0.3%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "KNT-00068",
+    "brand": "Kinto",
+    "model": "Sora",
+    "odometer_km": 20691,
+    "climate_zone": "hot_arid",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 60.2,
+      "remaining_months": 21.5,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 21.5 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.32 V crank / 12.53 V rest",
+        "reason": "Predicted 21.5 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "8.0 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "5.9 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "97.3 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "1.3%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "KNT-00035",
+    "brand": "Kinto",
+    "model": "Sora",
+    "odometer_km": 25610,
+    "climate_zone": "cold",
+    "overall_health_score": 80,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 54.4,
+      "remaining_months": 25.1,
+      "urgency": "elevated",
+      "primary_driver": "Predicted 25.1 months of life left. Contributing factors: cranking voltage sag (9.44 V).",
+      "prescriptive_action": "Schedule a battery load test and charging-system check at the next service."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "warning",
+        "metric_value": "9.44 V crank / 12.51 V rest",
+        "reason": "Predicted 25.1 months of life left. Contributing factors: cranking voltage sag (9.44 V)."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "8.2 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "6.0 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "88.0 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "1.0%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Kinto Sora battery is currently in a warning state due to a low cranking voltage of 9.44 V. The machine learning model provides a prediction of 25.1 months of remaining battery life. Service should first perform a load test on the battery to verify its condition."
+  },
+  {
+    "vehicle_id": "KNT-00087",
+    "brand": "Kinto",
+    "model": "Hikari",
+    "odometer_km": 19340,
+    "climate_zone": "tropical",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 70.9,
+      "remaining_months": 29.3,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 29.3 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.12 V crank / 12.62 V rest",
+        "reason": "Predicted 29.3 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "10.0 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "7.8 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "94.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "2.7%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "KNT-00018",
+    "brand": "Kinto",
+    "model": "Hikari",
+    "odometer_km": 75069,
+    "climate_zone": "tropical",
+    "overall_health_score": 90,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 83.9,
+      "remaining_months": 32.3,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 32.3 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.77 V crank / 12.64 V rest",
+        "reason": "Predicted 32.3 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "6.4 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "warning",
+        "metric_value": "2.2 mm",
+        "reason": "Tread depth below 3.5 mm; plan replacement."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "97.7 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-1.7%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "KNT-00041",
+    "brand": "Kinto",
+    "model": "Sora",
+    "odometer_km": 20615,
+    "climate_zone": "hot_arid",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 87.7,
+      "remaining_months": 37.0,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 37 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.74 V crank / 12.67 V rest",
+        "reason": "Predicted 37 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "9.7 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "5.8 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.6 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "2.1%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "KNT-00001",
+    "brand": "Kinto",
+    "model": "Hikari",
+    "odometer_km": 109987,
+    "climate_zone": "temperate",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 83.8,
+      "remaining_months": 37.9,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 37.9 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.28 V crank / 12.72 V rest",
+        "reason": "Predicted 37.9 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "9.9 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "5.6 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "94.0 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-3.0%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "KNT-00076",
+    "brand": "Kinto",
+    "model": "Mizu",
+    "odometer_km": 12616,
+    "climate_zone": "temperate",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 82.3,
+      "remaining_months": 41.9,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 41.9 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.45 V crank / 12.71 V rest",
+        "reason": "Predicted 41.9 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "10.8 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "6.7 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "88.9 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-0.9%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "cabin_air_idx",
+      "sw_build"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "1MRL6968657235002",
+    "brand": "Marlin",
+    "model": "Harbor",
+    "odometer_km": 41281,
+    "climate_zone": "cold",
+    "overall_health_score": 30,
+    "overall_status": "critical",
+    "projected_cost_at_risk_usd": 250.0,
+    "battery_analytics": {
+      "health_pct": 0.4,
+      "remaining_months": 0.2,
+      "urgency": "critical",
+      "primary_driver": "Predicted 0.2 months of life left. Contributing factors: severe cranking voltage drop (8.24 V), low resting voltage (11.98 V), battery age (48 months).",
+      "prescriptive_action": "Replace the battery at the earliest service visit and test the charging system."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "critical",
+        "metric_value": "8.24 V crank / 11.98 V rest",
+        "reason": "Predicted 0.2 months of life left. Contributing factors: severe cranking voltage drop (8.24 V), low resting voltage (11.98 V), battery age (48 months)."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "5.2 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "7.4 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-3.8%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "critical",
+        "metric_value": "P0562",
+        "reason": "P0562: System voltage low"
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Marlin Harbor has a critical battery status and a P0562 low system voltage trouble code. The machine learning model predicts only 0.2 months of battery life remaining based on a severe cranking voltage drop to 8.24 V and a low resting voltage of 11.98 V. Service should first test and replace the battery to resolve the voltage instability."
+  },
+  {
+    "vehicle_id": "1MRL5108229430871",
+    "brand": "Marlin",
+    "model": "Harbor",
+    "odometer_km": 102224,
+    "climate_zone": "hot_arid",
+    "overall_health_score": 80,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 33.7,
+      "remaining_months": 15.8,
+      "urgency": "elevated",
+      "primary_driver": "Predicted 15.8 months of life left. No single sensor is out of range; the prediction is driven by battery age and usage pattern.",
+      "prescriptive_action": "Schedule a battery load test and charging-system check at the next service."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "warning",
+        "metric_value": "9.75 V crank / 12.31 V rest",
+        "reason": "Predicted 15.8 months of life left. No single sensor is out of range; the prediction is driven by battery age and usage pattern."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "7.6 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "6.9 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.4 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-2.7%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Marlin Harbor battery is currently in a warning state with a health percentage of 33.7 percent. The machine learning model provides a prediction of 15.8 months of remaining battery life based on age and usage patterns. Service should first perform a physical inspection of the battery terminals and connections to verify the reported voltage levels."
+  },
+  {
+    "vehicle_id": "1MRL9025509212230",
+    "brand": "Marlin",
+    "model": "Surge",
+    "odometer_km": 52844,
+    "climate_zone": "tropical",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 51.5,
+      "remaining_months": 20.0,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 20 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "9.80 V crank / 12.45 V rest",
+        "reason": "Predicted 20 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "11.8 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "8.0 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "96.8 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "1.6%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "1MRL2968058250803",
+    "brand": "Marlin",
+    "model": "Surge",
+    "odometer_km": 77849,
+    "climate_zone": "temperate",
+    "overall_health_score": 50,
+    "overall_status": "critical",
+    "projected_cost_at_risk_usd": 450.0,
+    "battery_analytics": {
+      "health_pct": 44.1,
+      "remaining_months": 22.4,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 22.4 months of life left. Within limits, but watch: overcharging alternator (15.66 V).",
+      "prescriptive_action": "Inspect the alternator output (out of range) at the next service."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.04 V crank / 12.42 V rest",
+        "reason": "Predicted 22.4 months of life left. Within limits, but watch: overcharging alternator (15.66 V)."
+      },
+      {
+        "name": "Braking System",
+        "status": "critical",
+        "metric_value": "1.8 mm",
+        "reason": "Pad thickness below the 2.5 mm minimum; replace now."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "8.6 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.4 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "0.9%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "warning",
+        "metric_value": "P0563;C0750",
+        "reason": "P0563: System voltage high; C0750: Tire pressure sensor circuit"
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": "The Marlin Surge braking system is critical because the pad thickness of 1.8 mm is below the 2.5 mm minimum requirement. The vehicle also shows a high system voltage reading of 15.66 V from the alternator, which aligns with the P0563 trouble code. Service should prioritize replacing the brake pads immediately and investigating the charging system voltage. The battery has a predicted remaining life of 22.4 months."
+  },
+  {
+    "vehicle_id": "1MRL3951682001440",
+    "brand": "Marlin",
+    "model": "Harbor",
+    "odometer_km": 37676,
+    "climate_zone": "tropical",
+    "overall_health_score": 90,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 58.2,
+      "remaining_months": 25.1,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 25.1 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.42 V crank / 12.53 V rest",
+        "reason": "Predicted 25.1 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "9.6 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "warning",
+        "metric_value": "3.2 mm",
+        "reason": "Tread depth below 3.5 mm; plan replacement."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "90.0 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-3.0%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "1MRL4562726914912",
+    "brand": "Marlin",
+    "model": "Harbor",
+    "odometer_km": 9437,
+    "climate_zone": "tropical",
+    "overall_health_score": 90,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 62.4,
+      "remaining_months": 25.2,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 25.2 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.33 V crank / 12.57 V rest",
+        "reason": "Predicted 25.2 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "11.5 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "7.1 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "91.6 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "3.3%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "warning",
+        "metric_value": "P0420",
+        "reason": "P0420: Catalyst efficiency below threshold"
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "1MRL5642648837971",
+    "brand": "Marlin",
+    "model": "Harbor",
+    "odometer_km": 30909,
+    "climate_zone": "hot_arid",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 78.3,
+      "remaining_months": 33.1,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 33.1 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.62 V crank / 12.71 V rest",
+        "reason": "Predicted 33.1 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "8.2 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "4.3 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "92.5 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-1.0%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "1MRL5008341689331",
+    "brand": "Marlin",
+    "model": "Tide",
+    "odometer_km": 11479,
+    "climate_zone": "tropical",
+    "overall_health_score": 90,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 88.6,
+      "remaining_months": 36.7,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 36.7 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.47 V crank / 12.69 V rest",
+        "reason": "Predicted 36.7 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "10.7 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "6.5 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "91.8 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-4.6%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "warning",
+        "metric_value": "C0750",
+        "reason": "C0750: Tire pressure sensor circuit"
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "1MRL8253525640604",
+    "brand": "Marlin",
+    "model": "Harbor",
+    "odometer_km": 145255,
+    "climate_zone": "tropical",
+    "overall_health_score": 85,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 84.4,
+      "remaining_months": 36.2,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 36.2 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.65 V crank / 12.68 V rest",
+        "reason": "Predicted 36.2 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "warning",
+        "metric_value": "2.7 mm",
+        "reason": "Pad thickness below 4 mm; plan replacement."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "3.8 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "87.1 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-2.5%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  },
+  {
+    "vehicle_id": "1MRL8950219030077",
+    "brand": "Marlin",
+    "model": "Tide",
+    "odometer_km": 33312,
+    "climate_zone": "temperate",
+    "overall_health_score": 100,
+    "overall_status": "ok",
+    "projected_cost_at_risk_usd": 0.0,
+    "battery_analytics": {
+      "health_pct": 95.0,
+      "remaining_months": 42.2,
+      "urgency": "nominal",
+      "primary_driver": "Predicted 42.2 months of life left. Voltages and age are within normal ranges.",
+      "prescriptive_action": "No action needed; continue routine monitoring."
+    },
+    "components": [
+      {
+        "name": "Battery System",
+        "status": "ok",
+        "metric_value": "10.84 V crank / 12.69 V rest",
+        "reason": "Predicted 42.2 months of life left. Voltages and age are within normal ranges."
+      },
+      {
+        "name": "Braking System",
+        "status": "ok",
+        "metric_value": "7.7 mm",
+        "reason": "Pad thickness is within limits."
+      },
+      {
+        "name": "Tires",
+        "status": "ok",
+        "metric_value": "4.0 mm",
+        "reason": "Tread depth is within limits."
+      },
+      {
+        "name": "Thermal / Coolant Loop",
+        "status": "ok",
+        "metric_value": "83.4 \u00b0C",
+        "reason": "Coolant temperature is within the normal range."
+      },
+      {
+        "name": "Fuel Trim / Mixture",
+        "status": "ok",
+        "metric_value": "-1.5%",
+        "reason": "Fuel correction is within \u00b115%."
+      },
+      {
+        "name": "DTC Trouble Codes",
+        "status": "ok",
+        "metric_value": "NONE",
+        "reason": "No active ECU error codes."
+      }
+    ],
+    "unmapped_signals": [
+      "telematics.ota_channel",
+      "export_version"
+    ],
+    "missing_signals": [],
+    "ai_explanation": null
+  }
+]
