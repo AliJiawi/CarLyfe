@@ -254,9 +254,9 @@ select {
   gap: var(--space-2);
   height: 28px;
   padding: 0 var(--space-2);
-  border: var(--border-width) solid var(--border-strong);
+  border: 0;
   border-radius: var(--radius-md);
-  background: var(--surface);
+  background: transparent;
   color: var(--text);
   font-size: var(--text-xs);
   font-weight: var(--weight-strong);

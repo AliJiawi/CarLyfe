@@ -17,9 +17,31 @@ Predictive battery maintenance for vehicle fleets.
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-RUL%20model-111111?logo=scikitlearn&logoColor=F7931E)
 ![Gemini](https://img.shields.io/badge/Gemini-explanations-111111?logo=googlegemini&logoColor=8E75B2)
 
-[**Live API**](https://carlyfe.onrender.com/docs) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [How it works](#how-it-works) &nbsp;·&nbsp; [Getting started](#getting-started) &nbsp;·&nbsp; [API](#api)
+[**Open the app**](https://carlyfe.vercel.app) &nbsp;·&nbsp; [API docs](https://carlyfe.onrender.com/docs) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [How it works](#how-it-works) &nbsp;·&nbsp; [Getting started](#getting-started) &nbsp;·&nbsp; [API](#api)
 
 </div>
+
+<br>
+
+## Try it
+
+<table>
+<tr>
+<td>
+
+**Live app:** <https://carlyfe.vercel.app>
+
+Open it, then choose **Use demo data**, or upload one of the sample files from `Frontend/public/samples/`. The API behind it runs on a free tier, so the first upload after a quiet period can take up to a minute.
+
+</td>
+<td align="center">
+
+<img src="docs/qr.png" alt="QR code for carlyfe.vercel.app" width="150"><br>
+<sub>Scan to open</sub>
+
+</td>
+</tr>
+</table>
 
 <br>
 
@@ -98,7 +120,7 @@ flowchart LR
 | Backend | FastAPI, Uvicorn, pandas, NumPy |
 | Machine learning | scikit-learn Random Forest, saved with joblib |
 | AI explanations | Gemini (`gemini-3.1-flash-lite-preview`) through the Grafilab OpenAI-compatible API |
-| Hosting | Render (API) |
+| Hosting | Vercel (web app), Render (API) |
 
 <br>
 
