@@ -17,7 +17,7 @@ Predictive battery maintenance for vehicle fleets.
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-RUL%20model-111111?logo=scikitlearn&logoColor=F7931E)
 ![Gemini](https://img.shields.io/badge/Gemini-explanations-111111?logo=googlegemini&logoColor=8E75B2)
 
-[**Open the app**](https://carlyfe.vercel.app) &nbsp;·&nbsp; [API docs](https://carlyfe.onrender.com/docs) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [How it works](#how-it-works) &nbsp;·&nbsp; [Getting started](#getting-started) &nbsp;·&nbsp; [API](#api)
+[**Open the app**](https://carlyfe.vercel.app) &nbsp;·&nbsp; [API docs](https://carlyfe.onrender.com/docs) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [How it works](#how-it-works) &nbsp;·&nbsp; [API](#api)
 
 </div>
 
@@ -121,53 +121,6 @@ flowchart LR
 | Machine learning | scikit-learn Random Forest, saved with joblib |
 | AI explanations | Gemini (`gemini-3.1-flash-lite-preview`) through the Grafilab OpenAI-compatible API |
 | Hosting | Vercel (web app), Render (API) |
-
-<br>
-
-## Getting started
-
-### Prerequisites
-
-- Node.js 20 or newer
-- Python 3.10 or newer
-
-### Run the frontend
-
-```bash
-cd Frontend
-npm install
-npm run dev
-```
-
-Open <http://localhost:3000>. Choose **Use demo data** to see the interface straight away, or upload one of the files from `Frontend/public/samples/`.
-
-By default the app calls the hosted API at `https://carlyfe.onrender.com`. To point it at a local backend instead, create `Frontend/.env.local`:
-
-```bash
-NEXT_PUBLIC_API_URL=http://localhost:8000
-```
-
-> The hosted API runs on a free tier and can take up to a minute to wake after sitting idle. If it is slow or unreachable, the app falls back to 30 bundled demo vehicles (`Frontend/public/static_fallback.json`) and says so.
-
-### Run the backend
-
-```bash
-cd Backend
-python -m venv .venv
-.venv\Scripts\activate          # macOS / Linux: source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
-```
-
-The API is then at <http://localhost:8000>, with interactive docs at <http://localhost:8000/docs>.
-
-AI explanations are optional. Set these to enable them:
-
-| Variable | Purpose | Default |
-| --- | --- | --- |
-| `GRAFILAB_API_KEY` | Enables the LLM explanations. Without it, `ai_explanation` is `null`. | none |
-| `GRAFILAB_MODEL` | Model used for explanations. | `gemini/gemini-3.1-flash-lite-preview` |
-| `MAX_AI_VEHICLES` | How many of the worst vehicles get an explanation per upload. | `10` |
 
 <br>
 
