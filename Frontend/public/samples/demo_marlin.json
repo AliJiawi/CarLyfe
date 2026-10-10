@@ -1,0 +1,344 @@
+{
+  "export_version": "2.1",
+  "vehicles": [
+    {
+      "vin": "1MRL6968657235002",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Harbor"
+      },
+      "odometer_mi": 25651.0,
+      "battery": {
+        "age_months": 48.3,
+        "rest_voltage": 11.98,
+        "crank_min_voltage": 8.24,
+        "crank_ms": 1239.0,
+        "alternator_voltage": 14.48
+      },
+      "temps_f": {
+        "coolant_f": 194.2
+      },
+      "wear": {
+        "tire_tread_32nds": 9.3,
+        "brake_pad_32nds": 6.6
+      },
+      "fuel_trim": {
+        "ltft_pct": -3.8
+      },
+      "trips": {
+        "short_trip_pct": 35.7
+      },
+      "dtcs": [
+        "P0562"
+      ],
+      "region": "Northern Plains",
+      "telematics": {
+        "ota_channel": "beta"
+      }
+    },
+    {
+      "vin": "1MRL5108229430871",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Harbor"
+      },
+      "odometer_mi": 63519.0,
+      "battery": {
+        "age_months": 31.1,
+        "rest_voltage": 12.31,
+        "crank_min_voltage": 9.75,
+        "crank_ms": 794.0,
+        "alternator_voltage": 14.46
+      },
+      "temps_f": {
+        "coolant_f": 194.7
+      },
+      "wear": {
+        "tire_tread_32nds": 8.7,
+        "brake_pad_32nds": 9.6
+      },
+      "fuel_trim": {
+        "ltft_pct": -2.7
+      },
+      "trips": {
+        "short_trip_pct": 4.5
+      },
+      "dtcs": [],
+      "region": "Southwest",
+      "telematics": {
+        "ota_channel": "stable"
+      }
+    },
+    {
+      "vin": "1MRL9025509212230",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Surge"
+      },
+      "odometer_mi": 32836.0,
+      "battery": {
+        "age_months": 18.8,
+        "rest_voltage": 12.45,
+        "crank_min_voltage": 9.8,
+        "crank_ms": 644.0,
+        "alternator_voltage": 14.27
+      },
+      "temps_f": {
+        "coolant_f": 206.2
+      },
+      "wear": {
+        "tire_tread_32nds": 10.1,
+        "brake_pad_32nds": 14.9
+      },
+      "fuel_trim": {
+        "ltft_pct": 1.6
+      },
+      "trips": {
+        "short_trip_pct": 11.5
+      },
+      "dtcs": [],
+      "region": "Gulf Coast",
+      "telematics": {
+        "ota_channel": "beta"
+      }
+    },
+    {
+      "vin": "1MRL2968058250803",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Surge"
+      },
+      "odometer_mi": 48373.0,
+      "battery": {
+        "age_months": 28.4,
+        "rest_voltage": 12.42,
+        "crank_min_voltage": 10.04,
+        "crank_ms": 682.0,
+        "alternator_voltage": 15.66
+      },
+      "temps_f": {
+        "coolant_f": 194.7
+      },
+      "wear": {
+        "tire_tread_32nds": 10.8,
+        "brake_pad_32nds": 2.3
+      },
+      "fuel_trim": {
+        "ltft_pct": 0.9
+      },
+      "trips": {
+        "short_trip_pct": 44.6
+      },
+      "dtcs": [
+        "P0563",
+        "C0750"
+      ],
+      "region": "Midwest",
+      "telematics": {
+        "ota_channel": "stable"
+      }
+    },
+    {
+      "vin": "1MRL3951682001440",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Harbor"
+      },
+      "odometer_mi": 23411.0,
+      "battery": {
+        "age_months": 18.0,
+        "rest_voltage": 12.53,
+        "crank_min_voltage": 10.42,
+        "crank_ms": 614.0,
+        "alternator_voltage": 14.47
+      },
+      "temps_f": {
+        "coolant_f": 194.0
+      },
+      "wear": {
+        "tire_tread_32nds": 4.0,
+        "brake_pad_32nds": 12.1
+      },
+      "fuel_trim": {
+        "ltft_pct": -3.0
+      },
+      "trips": {
+        "short_trip_pct": 32.4
+      },
+      "dtcs": [],
+      "region": "Gulf Coast",
+      "telematics": {
+        "ota_channel": "beta"
+      }
+    },
+    {
+      "vin": "1MRL4562726914912",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Harbor"
+      },
+      "odometer_mi": 5864.0,
+      "battery": {
+        "age_months": 15.2,
+        "rest_voltage": 12.57,
+        "crank_min_voltage": 10.33,
+        "crank_ms": 559.0,
+        "alternator_voltage": 14.33
+      },
+      "temps_f": {
+        "coolant_f": 196.9
+      },
+      "wear": {
+        "tire_tread_32nds": 8.9,
+        "brake_pad_32nds": 14.5
+      },
+      "fuel_trim": {
+        "ltft_pct": 3.3
+      },
+      "trips": {
+        "short_trip_pct": 41.7
+      },
+      "dtcs": [
+        "P0420"
+      ],
+      "region": "Gulf Coast",
+      "telematics": {
+        "ota_channel": "stable"
+      }
+    },
+    {
+      "vin": "1MRL5642648837971",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Harbor"
+      },
+      "odometer_mi": 19206.0,
+      "battery": {
+        "age_months": 9.2,
+        "rest_voltage": 12.71,
+        "crank_min_voltage": 10.62,
+        "crank_ms": 539.0,
+        "alternator_voltage": 14.36
+      },
+      "temps_f": {
+        "coolant_f": 198.5
+      },
+      "wear": {
+        "tire_tread_32nds": 5.4,
+        "brake_pad_32nds": 10.3
+      },
+      "fuel_trim": {
+        "ltft_pct": -1.0
+      },
+      "trips": {
+        "short_trip_pct": 19.8
+      },
+      "dtcs": [],
+      "region": "Southwest",
+      "telematics": {
+        "ota_channel": "stable"
+      }
+    },
+    {
+      "vin": "1MRL5008341689331",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Tide"
+      },
+      "odometer_mi": 7133.0,
+      "battery": {
+        "age_months": 4.7,
+        "rest_voltage": 12.69,
+        "crank_min_voltage": 10.47,
+        "crank_ms": 503.0,
+        "alternator_voltage": 14.24
+      },
+      "temps_f": {
+        "coolant_f": 197.2
+      },
+      "wear": {
+        "tire_tread_32nds": 8.2,
+        "brake_pad_32nds": 13.5
+      },
+      "fuel_trim": {
+        "ltft_pct": -4.6
+      },
+      "trips": {
+        "short_trip_pct": 5.5
+      },
+      "dtcs": [
+        "C0750"
+      ],
+      "region": "Gulf Coast",
+      "telematics": {
+        "ota_channel": "beta"
+      }
+    },
+    {
+      "vin": "1MRL8253525640604",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Harbor"
+      },
+      "odometer_mi": 90257.0,
+      "battery": {
+        "age_months": 6.7,
+        "rest_voltage": 12.68,
+        "crank_min_voltage": 10.65,
+        "crank_ms": 437.0,
+        "alternator_voltage": 14.38
+      },
+      "temps_f": {
+        "coolant_f": 188.8
+      },
+      "wear": {
+        "tire_tread_32nds": 4.8,
+        "brake_pad_32nds": 3.4
+      },
+      "fuel_trim": {
+        "ltft_pct": -2.5
+      },
+      "trips": {
+        "short_trip_pct": 15.9
+      },
+      "dtcs": [],
+      "region": "Gulf Coast",
+      "telematics": {
+        "ota_channel": "beta"
+      }
+    },
+    {
+      "vin": "1MRL8950219030077",
+      "vehicle": {
+        "make": "Marlin",
+        "model": "Tide"
+      },
+      "odometer_mi": 20699.0,
+      "battery": {
+        "age_months": 2.2,
+        "rest_voltage": 12.69,
+        "crank_min_voltage": 10.84,
+        "crank_ms": 466.0,
+        "alternator_voltage": 14.48
+      },
+      "temps_f": {
+        "coolant_f": 182.1
+      },
+      "wear": {
+        "tire_tread_32nds": 5.0,
+        "brake_pad_32nds": 9.7
+      },
+      "fuel_trim": {
+        "ltft_pct": -1.5
+      },
+      "trips": {
+        "short_trip_pct": 30.2
+      },
+      "dtcs": [],
+      "region": "Midwest",
+      "telematics": {
+        "ota_channel": "beta"
+      }
+    }
+  ]
+}
