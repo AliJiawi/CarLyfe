@@ -17,7 +17,7 @@ Predictive battery maintenance for vehicle fleets.
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-RUL%20model-111111?logo=scikitlearn&logoColor=F7931E)
 ![Gemini](https://img.shields.io/badge/Gemini-explanations-111111?logo=googlegemini&logoColor=8E75B2)
 
-[**Open the app**](https://carlyfe.vercel.app) &nbsp;·&nbsp; [API docs](https://carlyfe.onrender.com/docs) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [How it works](#how-it-works) &nbsp;·&nbsp; [API](#api)
+[**Open the app**](https://carlyfe.vercel.app) &nbsp;·&nbsp; [Overview](#overview) &nbsp;·&nbsp; [How it works](#how-it-works) &nbsp;·&nbsp; [API](#api)
 
 </div>
 
